@@ -72,6 +72,42 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Timeline Section */
+/* Timeline positioning: Start below the title */
+#timeline-section {
+    position: absolute; /* Ensures it moves with the page instead of staying fixed */
+    left: 20px; /* Align to the left */
+    top: 500px; /* Adjust as needed to be below the title */
+    width: 180px;
+    text-align: left;
+}
+
+/* Timeline Vertical Line */
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 3px solid #ff6600; /* Timeline line */
+}
+
+/* Timeline Links (Events) */
+.timeline .event {
+    display: block;
+    padding: 10px 0;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.timeline .event:hover {
+    color: #ff4500;
+}
+
+
+
+
+
+
 /* Basic */
 
 	@-ms-viewport {
@@ -2788,7 +2824,9 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		padding: 6em 0 4em 0 ;
+		/* padding: 6em 0 4em 0 ; */
+		margin-left: 0;
+    	padding-left: 200px; /* Moves content right but keeps background white */
 	}
 
 		.wrapper > .inner {
@@ -3145,6 +3183,7 @@ input, select, textarea {
 		.wrapper.style5 {
 			background-color: #ffffff;
 			color: #4E4852;
+			padding-top: 50px;
 		}
 
 			.wrapper.style5 strong, .wrapper.style5 b {
@@ -3351,7 +3390,7 @@ input, select, textarea {
 		-ms-transition: -ms-transform 0.5s ease;
 		transition: transform 0.5s ease;
 		-webkit-overflow-scrolling: touch;
-		background: #21b2a6;
+		background: #776888;
 		color: #ffffff;
 		height: 100%;
 		max-width: 80%;
