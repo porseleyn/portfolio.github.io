@@ -29,12 +29,12 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">Home</a></li>
-											<li><a href="elements.html">Elements</a></li>
+											<!-- <li><a href="elements.html">Elements</a></li> -->
 											<li><a href="projects.html">Projects</a></li>
-											<li><a href="funthings.html">Fun things</a></li>
-											<li><a href="about.html">About</a></li>
-											<li><a href="cv.html">CV</a></li>
-											<li><a href="contact.html">Contact</a></li>
+											<!-- <li><a href="funthings.html">Fun things</a></li> -->
+											<!-- <li><a href="about.html">About</a></li> -->
+											<!-- <li><a href="cv.html">CV</a></li> -->
+											<!-- <li><a href="contact.html">Contact</a></li> -->
 											<!-- example of empty link <li><a href="#">Contact</a></li> -->
 										</ul>
 									</div>
@@ -47,7 +47,7 @@
 					<article id="main">
 						<header>
 							<h2>Projects</h2>
-							<p>All the projects I worked on during my time in Media Technology MSc studies, in order of largest to smallest projects. (or chronological?)</p>
+							<p>All the projects I worked on during my time in Media Technology MSc studies, in chronological order</p>
 						</header>
 						
 						<section class="wrapper style5">
@@ -71,6 +71,7 @@
 											<a href="#robotics" class="event">Robotics</a>
 											<a href="#minecraft-platformer" class="event">Minecraft Platformer</a>
 											<a href="#testified-existence" class="event">Testified Existence</a>
+											<a href="#cc" class="event">Computational Creativity</a>
 											<a href="#sneakpeek-ai" class="event">Sneakpeek AI</a>
 											<a href="#efds" class="event">Essentials for Data Science</a>
 											<a href="#graduation-project" class="event">Graduation Project</a>
@@ -95,18 +96,19 @@
 								
 								<section id="nhc">
 									<h3>Non-Human Cognition</h3>
-									<p>The Non-Human Cognition course focuses on consciousness in all non-human creatures, 
-										ranging from animals to robots. With our group we created a poster about elephant communication.
-										It was really fun except that the methods were shit, which we humbly "pointed out"" on our poster.
-									</p>
-
-									<a href="docs/poopy_poster.pdf" target="_blank" rel="noopener noreferrer">Elephant poster</a>
-									<br>
-									<br>
-									<img src="images/dumbo_group.JPG" alt="Poopy (fun) group" style="width:50%; height:auto;">
-								
+									<div class="nhc-flex">
+										<div class="nhc-text">
+											<p>The Non-Human Cognition course focuses on consciousness in all non-human creatures, 
+												ranging from animals to robots. With our group we created a poster about elephant communication.
+												It was really fun except that the methods were shit, which we humbly "pointed out" on our poster.
+											</p>
+											<a href="docs/poopy_poster.pdf" target="_blank" rel="noopener noreferrer">Elephant poster</a>
+										</div>
+										<div class="nhc-img">
+											<img src="images/dumbo_group.JPG" alt="Poopy (fun) group" style="width:80%; height:auto;">
+										</div>
+									</div>
 									<hr />
-
 								</section>
 
 								<section id="s&h">
@@ -129,14 +131,19 @@
 
 								<section id="rf">
 									<h3>Research Fundamentals</h3>
-									<p>The course Research Fundamentals taught us the basics of research 
-										and made us write a paper consisting of a topic that is about 7-papers 
-										big. A tough challenge, but I did it on one of my favourite animals to 
-										make it more bearable: octopi.
-									</p>
-
-									<a href="docs/7_papers.pdf" target="_blank" rel="noopener noreferrer">Alright show me the octopi!</a>
-								
+									<div class="nhc-flex">
+										<div class="nhc-text">
+											<p>The course Research Fundamentals taught us the basics of research 
+												and made us write a paper consisting of a topic that is about 7-papers 
+												big. A tough challenge, but I did it on one of my favourite animals to 
+												make it more bearable: octopi.
+											</p>
+											<a href="docs/7_papers.pdf" target="_blank" rel="noopener noreferrer">Alright show me the octopi!</a>
+										</div>
+										<div class="nhc-img">
+											<img src="images/octopus.jpg" alt="Octopus" style="width:80%; height:auto;">
+										</div>
+									</div>
 									<hr />
 
 								</section>
@@ -184,7 +191,10 @@
 										scenarios, task analyses and usability specifications. 
 										Eventually we came up with PianoSheetAI: a pianosheet generator for musicians with a 
 										creative block.
+										We presented it in a very theatrical way and that landed us a prize for best presentation!
 									</p>
+
+									<img src="images/pianosheetAI.jpg" alt="PianoSheetAI" style="width:55%; height:auto;">
 
 									<p>A year later we further developed the web app for the course Computational Creativity, 
 										but this time with a focus on the co-creative aspect of gaining inspiration.
@@ -199,7 +209,7 @@
 									<p>For the course Playful & Creative Science I had the honour of collaborating with my 
 										dear friend Annelies. We took an article about bee behaviour during solar eclipses and 
 										decided to demonstrate the results of the study in a creative and playful way: 
-										through a "peephole" box (Dutch: kijkdoos)!!
+										through a "peephole" box (in Dutch: kijkdoos)!!
 									</p>
 
 									<div class="box alt">
@@ -275,10 +285,10 @@
 										</div>
 									</div>
 
-									<button class="open-modal-btn" data-modal="modal-better">Behind the Scenes</button>
+									<button class="open-modal-btn" data-modal="modal-metamedia">Behind the Scenes</button>
 
 									<!-- Modal -->
-									<div id="modal-better" class="modal">
+									<div id="modal-metamedia" class="modal">
 										<div class="modal-content">
 											<span class="close">&times;</span>
 											<h3>BTS of Future Toys</h3>
@@ -323,10 +333,21 @@
 
 								<section id="better-together">
 									<h3>Better Together</h3>
-									<p>The course Artificial Creatures 
+									<p>For the course Artificial Creatures we had to come up with our own artificial creature(s). 
+										The one requirement was that it had one human quality: and we chose the need for togetherness. 
+										The whole class exhibited their creatures and it was a nice premiere for our little robots!
 										We also had to create our personal pages on a <a href="https://sites.google.com/view/artificialcreatures2024/student-portfolios/emma-boom/superstition?authuser=0" class="event">shared website</a>, 
-										if you are interested you can take a look at what me and my classmates did.
+										if you are interested you can take a look at what me and my classmates did. 
 									</p>
+
+									<div class="box alt">
+										<div class="row gtr-50 gtr-uniform">
+											<div class="col-6"><span class="image fit"><img src="images/Better_Together_BV.jpeg" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/better_together_pres.jpeg" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/better_together.JPG" alt="" /></span></div>
+											<div class="col-6"><span class="image fit"><img src="images/better_together_cool.JPG" alt="" /></span></div>
+										</div>
+									</div>
 
 									<p>In September 2024, we were asked to perform with our robots during the Leiden Night of Discoveries for the Critters Exposition. 
 										With three big performances and small shows in between we amazed minds of kids and adults alike.
@@ -339,11 +360,11 @@
 										<div class="modal-content">
 											<span class="close">&times;</span>
 											<h3>BTS of Better Together</h3>
-											<p>Some descriptive text about the project here.</p>
+											<p>It was a fun time working on our little babies and hanging out Nate!</p>
 
 											<!-- Add images -->
-											<img src="images/behind1.jpg" alt="Behind the Scenes 1" style="width:100%; height:auto;">
-											<img src="images/behind2.jpg" alt="Behind the Scenes 2" style="width:100%; height:auto;">
+											<img src="images/better_together_bts.jpg" alt="Behind the Scenes 1" style="width:50%; height:auto;">
+											<img src="images/better_together_bts2.jpg" alt="Behind the Scenes 2" style="width:65%; height:auto;">
 
 											<!-- Add video -->
 											<iframe width="560" height="315"
@@ -433,11 +454,8 @@
 											<span class="close">&times;</span>
 											<h3>BTS of Testified Existence</h3>
 											<p>This was one of the most fun projects we did, with the cherry on top exhibiting 
-												it in V2_Lab for the xx. .</p>
-
-											<!-- Add images -->
-											<img src="images/behind1.jpg" alt="Behind the Scenes 1" style="width:100%; height:auto;">
-											<img src="images/behind2.jpg" alt="Behind the Scenes 2" style="width:100%; height:auto;">
+												it in V2_Lab for all who wanted to see! Finally my friends and family knew what I
+												was doing in this masters.</p>
 
 											<p>Our teammate Joseph designed the poster together with Es! Very cool!</p>
 
@@ -450,11 +468,62 @@
 								
 								</section>
 
+								<section id="cc">
+									<h3>Computational Creativity</h3>
+
+									<div class="nhc-flex">
+										<div class="nhc-text">
+											<p>For the course Computational Creativity we had to do three assignments: create a 
+												poem generator (we made a medieval limerick generator together with my teammate Tom 
+												from the Robotics class we took together), a cookie recipe generator together with 
+												Linthe and Sanne (we made mochi because yum) and a co-creative system, for which 
+												Linthe and I further developed our PianoSheetAI project from HCIIV.
+											</p>
+											
+											<iframe width="560" height="315"
+												src="https://www.youtube.com/embed/EQ93Y96EEsU"
+												title="YouTube video player"
+												frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen>
+											</iframe>
+
+											<iframe width="560" height="315"
+												src="https://www.youtube.com/embed/e-GNHiEiJg8"
+												title="YouTube video player"
+												frameborder="0"
+												allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+												allowfullscreen>
+											</iframe>
+
+											<br>
+
+											<a href="docs/mochi_monsters.pdf" target="_blank" rel="noopener noreferrer">Mochi Monsters Recipe Book</a>
+										
+										</div>
+										<div class="nhc-img">
+											<img src="images/mochi_monster.png" alt="Behind the Scenes 2" style="width:75%; height:auto;">
+										</div>
+									</div>	
+
+									<hr />
+
+								</section>
+
 								<section id="sneakpeek-ai">
 									<h3>Sneakpeek AI</h3>
-									<p>For the course AI and Society, taught by Zane Kripke, </p>
+									<p>For the course AI and Society, taught by Zane Kripke, we were challenged to 
+										think about the consequences of using AI in our daily lives. As a final assignment, 
+										we worked in small groups to apply what we had learned in a specific field of work.
+									</p>
 
-									<p>Bla.</p>
+									<p>I was in a group with Annelies and Christina, the dream team. We decided to make a 
+										Duolingo inspired app about taking away the fear of AI replacing jobs in medicine 
+										for medical students.</p>
+
+									<img src="images/ai-soc1.png" alt="Behind the Scenes 2" style="width:25%; height:auto;">
+									<img src="images/ai-soc2.png" alt="Behind the Scenes 2" style="width:25%; height:auto;">
+									<img src="images/ai-soc3.png" alt="Behind the Scenes 2" style="width:25%; height:auto;">	
 
 									<hr />
 
@@ -476,7 +545,40 @@
 									<p>The final part of this master was in the theme of the thesis research. 
 										I decided to combine my sport ultimate frisbee with data science, and 
 										really it was just a perfect excuse to watch a lot of ultimate games.
+										I wanted to do all my analyses in Python so this thesis combined with 
+										the course of Essentials for Data Science was a perfect match.
 									</p>
+
+									<a href="docs/UF_Thesis_Presentation.pdf" target="_blank" rel="noopener noreferrer">Thesis presentation slides</a>
+
+									<br>
+
+									<br>
+
+									<button class="open-modal-btn" data-modal="modal-grad">Behind the Scenes</button>
+
+									<!-- Modal -->
+									<div id="modal-grad" class="modal">
+										<div class="modal-content">
+											<span class="close">&times;</span>
+											<h3>BTS of the Graduation Project</h3>
+											<p>Frisbee people are just cool. I mean, just look at this screenshot 
+												of the annotation program that I used: that is not a frisbee no, 
+												that is a dog. Because during timeouts, dogs are better to zoom in 
+												on than people.
+											</p>
+
+											<p> Fun fact: I had presented with the results of 12 annotated games, 
+												but for the final thesis I had decided to annotate 4 more games. 
+												This resulted in not 5 significant performance indicators, but 
+												8 out of 11!! Whoop whoop!
+											</p>
+
+											<!-- Add images -->
+											<img src="images/BORIS-dogcam.png" alt="Behind the Scenes 1" style="width:100%; height:auto;">
+
+										</div>
+									</div>
 								
 									<hr />
 
